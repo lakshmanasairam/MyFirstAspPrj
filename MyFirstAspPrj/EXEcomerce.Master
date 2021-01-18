@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EXEcomerce.master.cs" Inherits="MyFirstAspPrj.EXEcomerce" %>
+
+<%@ Register Src="~/WebUserControl1.ascx" TagPrefix="uc1" TagName="WebUserControl1" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="content/bootstrap_minty.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid bg-gradient-light text-dark" style="height: 100px">
+            <div class="row">
+                <div class="col-2 bg-gradient-secondary" style="height: 100px">
+                    <img src="images/11.jpg" style="width: 211px; height: 100px; align-content: baseline" />
+                    <%-- <uc1:WebUserControl1 runat="server" ID="WebUserControl1" />--%>
+                </div>
+                <div class="col-4" style="margin-top: 25px;">
+                    <asp:TextBox Placeholder="Search Products" CssClass="text-search" ID="TxtSearch" runat="server" Width="350px" Height="35px" Rows="0"></asp:TextBox>
+                </div>
+                <div class="col-2" style="margin-top: 25px;">
+                    <asp:Button runat="server" ID="BtnSearch" Text="Search" CssClass="btn btn-primary" Width="100px" OnClick="BtnSearch_Click" />
+                    <link href="content/StyleSheet2.css" rel="stylesheet" />
+                </div>
+                <div class="col-2" style="margin-top: 25px;">
+                    <asp:Button runat="server" Text="Login/Signup" CssClass="btn btn-primary" ID="BtnLogin"  Width="100px"  OnClick="BtnLogin_Click" />
+                </div>
+                <div class="col-2" style="margin-top: 25px;">
+                    <asp:Button runat="server" Text="Logout" CssClass="btn btn-primary" ID="BtnLogout" Width="100px" Visible="false" OnClick="BtnLogout_Click" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                        <div class="container-fluid">
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <asp:LinkButton ID="BtnMobile" Text="Mobile" CssClass="nav-link" runat="server" OnClick="BtnMobile_Click">Mobile</asp:LinkButton>
+                                        <%-- <asp:HyperLink CssClass="nav-link" ID="LnkMobile" runat="server">Mobile</asp:HyperLink>--%>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:LinkButton ID="BtnLaptop" runat="server" CssClass="nav-link" OnClick="BtnLaptop_Click">Laptops</asp:LinkButton>
+                                        <%--<asp:HyperLink CssClass="nav-link" ID="LnkLaptops" runat="server">Laptop</asp:HyperLink>--%>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink CssClass="nav-link" ID="AddItem" runat="server" NavigateUrl="~/Ecomerce.aspx" Visible="false">AddItem</asp:HyperLink>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <asp:Label Text="" runat="server" ID="LblStatus" />
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <asp:ContentPlaceHolder ID="ChildContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <h5>ACCOUNT</h5>
+                            <a href="#">YOUR ACCOUNT</a><br />
+                            <a href="#">PERSONAL INFORMATION</a><br />
+                            <a href="#">ADDRESSES</a><br />
+                            <a href="#">DISCOUNT</a><br />
+                            <a href="#">ORDER HISTORY</a><br />
+                        </div>
+                        <div class="col-3" style="margin-left: 50px">
+                            <h5>INFORMATION</h5>
+                            <a href="#">CONTACT</a><br />
+                            <a href="#">REGISTRATION</a><br />
+                            <a href="#">LEGAL NOTICE</a><br />
+                            <a href="#">TERMS AND CONDITIONS</a><br />
+                            <a href="#">FAQ</a><br />
+                        </div>
+                        <div class="col-3"style="margin-left: 50px;">
+                            <h5>OUR OFFERS</h5>
+                            <a href="#">NEW PRODUCTS</a><br />
+                            <a href="#">TOP SELLERS</a><br />
+                            <a href="special_offer.html">SPECIAL OFFERS</a><br />
+                            <a href="#">MANUFACTURERS</a><br />
+                            <a href="#">SUPPLIERS</a><br />
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

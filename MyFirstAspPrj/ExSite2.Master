@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ExSite2.master.cs" Inherits="MyFirstAspPrj.ExSite2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="content/MasterEx2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Screenshot%20(292).png" style="width:500px;height:170px" />      
+            </div>
+           <div class="Search" float:"right">
+                 <asp:TextBox Placeholder="Search Category,Brands,Products" ID="TxtSearchButton" runat="server" CssClass="text-search" Height="25px" Width="500px" Rows="0" ></asp:TextBox>
+               <asp:Button ID="BtnSearchButton" runat="server" Text="Cart" CssClass="button-search" BorderColor="Pink" Height="25px" Width="100px"  Font-Names="Arial" />
+             </div>
+            <div class="navbar" >
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                <link href="content/Menu.css" rel="stylesheet" />
+                 <div>
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                <LevelMenuItemStyles>
+                    <asp:MenuItemStyle CssClass="parent_menu" />
+                </LevelMenuItemStyles>
+                <DynamicMenuItemStyle CssClass="Child_menu" />
+               <DynamicHoverStyle backcolor="Wheat" />
+            </asp:Menu>
+        </div>
+            </div>
+            <div class="content">
+                
+               
+            <asp:ContentPlaceHolder ID="ChildContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="Footer">
+                Footer
+            </div>
+        </div>
+    </form>
+</body>
+</html>

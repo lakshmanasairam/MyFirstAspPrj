@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title=""  description="">
+		<siteMapNode url="Dogstore.aspx" title="Dog Store">
+			<siteMapNode url="Dogfood.aspx" title="Dog Food" />
+			<siteMapNode url="DogToys.aspx" title="Dog Treats" ></siteMapNode>
+			<siteMapNode url ="DogTreats.aspx" title="Dog Toys" />
+			<siteMapNode url="Health.aspx" title="Health&amp; Wellness" />
+			<siteMapNode url="Grooming.aspx" title="Grooming" />
+			<siteMapNode url="Flea.aspx" title="Flea&amp; Ticks" />
+			<siteMapNode url=" Clothing.aspx" title="Clothing&amp; Accessories" />
+			<siteMapNode url="Collars.aspx" title="Collars&amp; Leashes" />
+		</siteMapNode>
+		<siteMapNode url="CatStore.aspx" title=" Cat Store">
+			<siteMapNode url="Cr.apsx" title="Cat Foods "></siteMapNode>
+			<siteMapNode url="Cat.aspx" title="Cat Accessories"/>
+			<siteMapNode url="Groom.aspx" title="Cat Grooming"/>
+			<siteMapNode url="CatCrates.aspx" title="Cat Crates" />
+			<siteMapNode url="CatLitter.aspx" title="Cat Litter &amp;Accessories" />
+		</siteMapNode>
+		<siteMapNode url="Bird.aspx" title="Bird &amp; Small Pets" >
+			<siteMapNode url="BirdFood.aspx" title="Bird Food" />
+			<siteMapNode url="BirdSupplement.aspx" title="Bird Supplement" />
+			<siteMapNode url="SmallPetFoods.aspx" title="Small Pet Food &amp; Treats" />
+			<siteMapNode url="FeedingAccessories.aspx" title="Feeding Accessories" />
+			<siteMapNode url="Habitat.aspx" title="Habitat &amp;Accessories" />
+		</siteMapNode>
+		<siteMapNode  url="Classifides.aspx" title="Clasifides">
+			<siteMapNode url="veterian.aspx" title="Veterian" />
+			<siteMapNode url="Grom.aspx" title="Grooming" />
+			<siteMapNode url="petshop.aspx" title="PetShop" />
+		</siteMapNode>
+		<siteMapNode url="DogBreeds.aspx" title="Dog Breeds">
+			<siteMapNode url="Labrador.aspx" title="Labrador" />
+			<siteMapNode url="Golden.aspx" title="Golden Retriver" />
+			<siteMapNode url="Gremean.aspx" title="German Shepherd" />
+		</siteMapNode>
+		<siteMapNode url="DogCommunity.aspx" title="Dog Community">
+			<siteMapNode url="Wag.aspx" title="Wag Club" />
+			<siteMapNode url="DogShow.aspx" title="Dog Show" />
+		</siteMapNode>
+		<siteMapNode url="Q.aspx" title="Q&amp; A"></siteMapNode>
+		<siteMapNode url="DogBlog.aspx" title="Dog Blog"></siteMapNode>
+		<siteMapNode url="Adoption.aspx" title="Adoption"></siteMapNode>
+	</siteMapNode>
+</siteMap>

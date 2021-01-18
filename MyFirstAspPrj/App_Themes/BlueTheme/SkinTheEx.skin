@@ -1,0 +1,3 @@
+﻿<asp:TextBox  runat="server" Font-Size="10" Font-Names="Verdana" ForeColor="Red"></asp:TextBox>
+<asp:Button Forecolor="red" runat="server" Font-Size="10" Font-Names="Verdana" />
+<asp:gridview Forecolor="red" runat="server" Font-Size="10" Font-Names="Verdana" />

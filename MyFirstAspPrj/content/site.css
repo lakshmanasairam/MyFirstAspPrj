@@ -1,0 +1,27 @@
+﻿.div{
+    width:300px;
+    padding:30px;
+    margin:auto;
+    border:2px solid lightgrey;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:5px 5px 5px grey;
+  
+}
+table,tr,td{
+    border-collapse:collapse;
+}
+table{
+    margin:auto;
+}
+td{
+    padding:5px;
+}
+tr
+{
+    box-shadow:2px;
+}
+h1{
+    color:#10a6dc;
+    font-family:'Microsoft Himalaya';
+}

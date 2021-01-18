@@ -1,0 +1,17 @@
+﻿.parent_menu{
+    background-color:#808080;
+    Color:ghostwhite;
+    width:120px;
+    height:30px;
+    line-height:30px;
+}
+
+
+.Child_menu{
+    background-color:#8ef8f2;
+    Color:white;
+    width:150px;
+    height:30px;
+    line-height:30px;
+    margin:5px;
+}

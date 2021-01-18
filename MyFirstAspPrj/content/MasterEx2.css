@@ -1,0 +1,36 @@
+﻿.container{
+    width:1400px;
+    height:800px;
+    background-color:white;
+}
+
+.logo{
+    width:500px;
+    height:150px;
+    background-color:#66dd13;
+    float:left;
+}
+.Search{
+    width:900px;
+    height:150px;
+    background-color:#66dd13;
+    float: right;
+}
+.navbar{
+    width: 1400px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+.content{
+    width:1400px;
+    height:500px;
+    background-color:azure;
+    float:left;
+}
+.footer{
+    width:1400px;
+    height:100px;
+    background-color:#f5d8b1;
+    float:left;
+}

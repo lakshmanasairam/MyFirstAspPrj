@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyFirstAspPrj.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="content/MasterStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="logo">
+                logo
+            </div>
+            <div class="search">
+                Search
+            </div>
+            <div class="navbar">
+                Navigation
+            </div>
+            <div class="content">
+            <asp:ContentPlaceHolder ID="ChildContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>

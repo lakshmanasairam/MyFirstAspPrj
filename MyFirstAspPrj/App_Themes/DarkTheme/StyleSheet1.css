@@ -1,0 +1,14 @@
+﻿body {
+    background-color:gray;
+}
+input{
+    font-family:'Microsoft Himalaya';
+    font-size:13px;
+}
+input[type=text],textarea,select,option{
+    color:#ff6a00;
+}
+table,tr,td{
+    border-color:pink;
+    color:#b6ff00;
+}
